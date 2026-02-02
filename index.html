@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Nanda Turismo | Transformando Sonhos em Experiências Reais</title>
-  <meta name="description" content="Viagens personalizadas com suporte completo. Roteiros nacionais (Santa Catarina e Nordeste) e internacionais. Transforme sonhos em memórias.">
+  <meta name="description" content="Viagens personalizadas com suporte completo. Roteiros nacionais, internacionais, cruzeiros e lua de mel. Transforme sonhos em memórias.">
   
   <link rel="canonical" href="https://nandaturismo.com.br" />
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="noindex, nofollow">
   <meta name="author" content="Nanda Turismo">
   
   <meta property="og:title" content="Nanda Turismo | Viagens Personalizadas">
@@ -115,18 +115,15 @@
       }
     }
     
-    /* Fix para o menu mobile */
     #mobile-menu {
       transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     }
     
-    /* Melhorias de responsividade */
     @media (max-width: 768px) {
       .container {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
       }
-      
       section {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -143,7 +140,7 @@
     <div class="container mx-auto px-6 flex justify-between items-center relative">
       <div class="flex items-center gap-2 relative z-50">
         <a href="index.html" class="block">
-          <img src="logo-bg.png" alt="Nanda Turismo" class="h-14 w-auto transition-all duration-300 hover:scale-105" loading="eager" id="header-logo">
+          <img src="logo-bg.png" alt="Nanda Turismo" class="h-16 md:h-20 w-auto transition-all duration-300 hover:scale-105" loading="eager" id="header-logo">
         </a>
       </div>
 
@@ -370,6 +367,73 @@
               </div>
             </div>
           </div>
+
+          <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+            <div class="relative h-48 md:h-64 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                   alt="Maldivas e Caribe" 
+                   class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                   loading="lazy">
+              <div class="absolute top-4 left-4 bg-[#2DD4BF] text-white px-4 py-2 rounded-full text-sm font-bold">
+                <i class="fas fa-glass-cheers mr-2"></i> Lua de Mel
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-xl md:text-2xl mb-2">Maldivas & Caribe</h3>
+              <p class="text-gray-600 mb-4 text-sm md:text-base">Cenários paradisíacos para momentos inesquecíveis a dois. O refúgio perfeito para o romance.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-gold font-bold text-sm md:text-base">Experiências de Luxo</span>
+                <a href="#contato" class="text-primary hover:text-gold font-semibold text-sm">
+                  Saiba mais <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+            <div class="relative h-48 md:h-64 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                   alt="Cruzeiros" 
+                   class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                   loading="lazy">
+              <div class="absolute top-4 left-4 bg-[#1E3A8A] text-white px-4 py-2 rounded-full text-sm font-bold">
+                <i class="fas fa-ship mr-2"></i> Cruzeiros
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-xl md:text-2xl mb-2">Nacionais & Internacionais</h3>
+              <p class="text-gray-600 mb-4 text-sm md:text-base">Diversão All Inclusive em alto mar. Roteiros pela costa brasileira ou pelos mares do mundo.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-gold font-bold text-sm md:text-base">Tudo Incluso</span>
+                <a href="#contato" class="text-primary hover:text-gold font-semibold text-sm">
+                  Saiba mais <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+            <div class="relative h-48 md:h-64 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1613941786576-9d332d918a38?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                   alt="Gramado e Vinícolas" 
+                   class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                   loading="lazy">
+              <div class="absolute top-4 left-4 bg-[#78350F] text-white px-4 py-2 rounded-full text-sm font-bold">
+                <i class="fas fa-wine-glass mr-2"></i> Inverno
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-xl md:text-2xl mb-2">Serras & Charme</h3>
+              <p class="text-gray-600 mb-4 text-sm md:text-base">Gramado, Canela e Vale dos Vinhedos. Gastronomia, frio e aconchego para curtir em qualquer época.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-gold font-bold text-sm md:text-base">Roteiros de Charme</span>
+                <a href="#contato" class="text-primary hover:text-gold font-semibold text-sm">
+                  Saiba mais <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <div class="text-center mt-10 md:mt-12">
@@ -732,7 +796,7 @@
         
         <div>
           <a href="index.html" class="block mb-6 transition-transform hover:scale-105">
-            <img src="logo-bg.png" alt="Nanda Turismo" class="h-10 md:h-12 w-auto">
+            <img src="logo-bg.png" alt="Nanda Turismo" class="h-12 md:h-14 w-auto">
           </a>
           <p class="text-gray-500 text-sm mb-2">Desde 2010 <br>Transformando sonhos em experiências reais.</p>
           <p class="text-gray-500 text-xs uppercase tracking-tighter opacity-70">
@@ -818,34 +882,40 @@
       if (window.scrollY > 50) {
         header.classList.add('bg-primary-dark', 'py-4', 'shadow-xl');
         header.classList.remove('py-6', 'bg-transparent');
-        headerLogo.classList.remove('h-14');
-        headerLogo.classList.add('h-12');
+        // Reduz sutilmente ao rolar, mas mantém a proporção
+        headerLogo.classList.remove('h-16', 'md:h-20');
+        headerLogo.classList.add('h-14', 'md:h-16');
       } else {
         header.classList.remove('bg-primary-dark', 'py-4', 'shadow-xl');
         header.classList.add('py-6', 'bg-transparent');
-        headerLogo.classList.remove('h-12');
-        headerLogo.classList.add('h-14');
+        // Volta ao tamanho grande
+        headerLogo.classList.remove('h-14', 'md:h-16');
+        headerLogo.classList.add('h-16', 'md:h-20');
       }
     });
 
-    // Mobile menu - CORRIGIDO
+    // Mobile menu
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     const menuClose = document.getElementById('menu-close');
 
-    menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.remove('translate-x-full');
-      mobileMenu.setAttribute('aria-hidden', 'false');
-      menuToggle.setAttribute('aria-expanded', 'true');
-      document.body.style.overflow = 'hidden';
-    });
+    if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+        mobileMenu.setAttribute('aria-hidden', 'false');
+        menuToggle.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+        });
+    }
 
-    menuClose.addEventListener('click', closeMobileMenu);
+    if (menuClose) {
+        menuClose.addEventListener('click', closeMobileMenu);
+    }
 
     function closeMobileMenu() {
       mobileMenu.classList.add('translate-x-full');
       mobileMenu.setAttribute('aria-hidden', 'true');
-      menuToggle.setAttribute('aria-expanded', 'false');
+      if(menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
       document.body.style.overflow = '';
     }
 
@@ -856,31 +926,35 @@
 
     // Modal WhatsApp
     function openWhatsAppModal() {
-      document.getElementById('whatsapp-modal').classList.remove('hidden');
-      document.getElementById('whatsapp-modal').classList.add('flex');
-      document.getElementById('whatsapp-modal').setAttribute('aria-hidden', 'false');
+      const modal = document.getElementById('whatsapp-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      modal.setAttribute('aria-hidden', 'false');
       trapFocus('whatsapp-modal');
     }
 
     function closeWhatsAppModal() {
-      document.getElementById('whatsapp-modal').classList.add('hidden');
-      document.getElementById('whatsapp-modal').classList.remove('flex');
-      document.getElementById('whatsapp-modal').setAttribute('aria-hidden', 'true');
+      const modal = document.getElementById('whatsapp-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      modal.setAttribute('aria-hidden', 'true');
       releaseFocus();
     }
 
-    // Modal LGPD - CORRIGIDO
+    // Modal LGPD
     function openLgpdModal() {
-      document.getElementById('lgpd-modal').classList.remove('hidden');
-      document.getElementById('lgpd-modal').classList.add('flex');
-      document.getElementById('lgpd-modal').setAttribute('aria-hidden', 'false');
+      const modal = document.getElementById('lgpd-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      modal.setAttribute('aria-hidden', 'false');
       trapFocus('lgpd-modal');
     }
 
     function closeLgpdModal() {
-      document.getElementById('lgpd-modal').classList.add('hidden');
-      document.getElementById('lgpd-modal').classList.remove('flex');
-      document.getElementById('lgpd-modal').setAttribute('aria-hidden', 'true');
+      const modal = document.getElementById('lgpd-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      modal.setAttribute('aria-hidden', 'true');
       releaseFocus();
     }
 
@@ -897,10 +971,11 @@
       focusableElements = modal.querySelectorAll(
         'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
       );
-      firstFocusableElement = focusableElements[0];
-      lastFocusableElement = focusableElements[focusableElements.length - 1];
-      
-      firstFocusableElement.focus();
+      if (focusableElements.length > 0) {
+        firstFocusableElement = focusableElements[0];
+        lastFocusableElement = focusableElements[focusableElements.length - 1];
+        firstFocusableElement.focus();
+      }
       
       modal.addEventListener('keydown', handleTabKey);
       document.body.style.overflow = 'hidden';
@@ -933,13 +1008,17 @@
     // Fechar modais com Escape
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
-        if (document.getElementById('whatsapp-modal').classList.contains('flex')) {
+        const waModal = document.getElementById('whatsapp-modal');
+        const lgpdModal = document.getElementById('lgpd-modal');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (waModal && waModal.classList.contains('flex')) {
           closeWhatsAppModal();
         }
-        if (document.getElementById('lgpd-modal').classList.contains('flex')) {
+        if (lgpdModal && lgpdModal.classList.contains('flex')) {
           closeLgpdModal();
         }
-        if (!mobileMenu.classList.contains('translate-x-full')) {
+        if (mobileMenu && !mobileMenu.classList.contains('translate-x-full')) {
           closeMobileMenu();
         }
       }
@@ -958,7 +1037,7 @@
       }
     });
 
-    // LGPD Cookies - CORRIGIDO
+    // LGPD Cookies
     function acceptCookies() {
       document.getElementById('lgpd-banner').style.display = 'none';
       localStorage.setItem('cookies-accepted', 'true');
@@ -967,7 +1046,8 @@
     // Verificar se já aceitou cookies
     if (localStorage.getItem('cookies-accepted') !== 'true') {
       setTimeout(() => {
-        document.getElementById('lgpd-banner').classList.remove('hidden');
+        const banner = document.getElementById('lgpd-banner');
+        if(banner) banner.classList.remove('hidden');
       }, 1000);
     }
 
@@ -981,7 +1061,7 @@
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
           window.scrollTo({
-            top: targetElement.offsetTop - 80,
+            top: targetElement.offsetTop - 80, // Ajuste para o header fixo
             behavior: 'smooth'
           });
         }
