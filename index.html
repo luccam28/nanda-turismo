@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Nanda Turismo | Transformando Sonhos em Experiências Reais</title>
+  <meta name="description" content="Viagens personalizadas com suporte completo. Roteiros nacionais (Santa Catarina e Nordeste) e internacionais. Transforme sonhos em memórias.">
+  
+  <link rel="canonical" href="https://nandaturismo.com.br" />
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Nanda Turismo">
+  
+  <meta property="og:title" content="Nanda Turismo | Viagens Personalizadas">
+  <meta property="og:description" content="Planejamento cuidadoso, segurança e atendimento humanizado para sua próxima viagem.">
+  <meta property="og:image" content="https://nandaturismo.com.br/og-image.jpg">
+  <meta property="og:url" content="https://nandaturismo.com.br">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Nanda Turismo">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@nandaturismo">
+  <meta name="twitter:title" content="Nanda Turismo | Experiências Memoráveis">
+  <meta name="twitter:description" content="Agência de viagens especializada em transformar sonhos em experiências reais.">
+  <meta name="twitter:image" content="https://nandaturismo.com.br/twitter-image.jpg">
+  
+  <link rel="icon" type="image/png" href="logo.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary': '#0B2A3D',
+            'primary-dark': '#081F2E',
+            'gold': '#D4AF6A',
+            'sand': '#F9F7F2',
+          },
+          fontFamily: {
+            'serif': ['Playfair Display', 'serif'],
+            'sans': ['Inter', 'sans-serif'],
+          },
+          animation: {
+            'reveal': 'reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards',
+            'float': 'float 6s ease-in-out infinite',
+            'slideUp': 'slideUp 0.3s ease-out',
+          },
+          keyframes: {
+            reveal: {
+              '0%': { transform: 'translateY(100%)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-20px)' },
+            },
+            slideUp: {
+              '0%': { transform: 'translateY(100%)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .glass {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .reveal-container { overflow: hidden; }
+    
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #0B2A3D; }
+    ::-webkit-scrollbar-thumb { background: #D4AF6A; border-radius: 10px; }
+
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #D4AF6A;
+      color: white;
+      padding: 8px;
+      z-index: 100;
+      transition: top 0.3s;
+    }
+    .skip-link:focus { top: 0; }
+    
+    @keyframes pulse-whatsapp {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      50% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+    }
+    .animate-pulse-whatsapp {
+      animation: pulse-whatsapp 2s infinite;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .animate-reveal,
+      .animate-float,
+      .animate-slideUp,
+      .animate-pulse-whatsapp,
+      .animate-bounce {
+        animation: none !important;
+      }
+    }
+    
+    /* Fix para o menu mobile */
+    #mobile-menu {
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    /* Melhorias de responsividade */
+    @media (max-width: 768px) {
+      .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+      
+      section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-primary text-white font-sans overflow-x-hidden">
+
+  <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
+
+  <header class="fixed w-full top-0 left-0 z-50 transition-all duration-500 py-6 bg-transparent" id="header">
+    <div class="container mx-auto px-6 flex justify-between items-center relative">
+      <div class="flex items-center gap-2 relative z-50">
+        <a href="index.html" class="block">
+          <img src="logo-bg.png" alt="Nanda Turismo" class="h-14 w-auto transition-all duration-300 hover:scale-105" loading="eager" id="header-logo">
+        </a>
+      </div>
+
+      <nav class="hidden md:flex gap-10 text-xs font-semibold uppercase tracking-[0.2em]" aria-label="Menu Principal">
+        <a href="#sobre" class="hover:text-gold transition-colors py-2">A Agência</a>
+        <a href="#destinos" class="hover:text-gold transition-colors py-2">Destinos</a>
+        <a href="#roteiros" class="hover:text-gold transition-colors py-2">Roteiros</a>
+        <a href="#diferenciais" class="hover:text-gold transition-colors py-2">Vantagens</a>
+        <a href="#contato" class="hover:text-gold transition-colors py-2">Contato</a>
+      </nav>
+
+      <button class="md:hidden flex flex-col gap-1.5 focus:outline-none relative z-50 cursor-pointer p-2 rounded hover:bg-white/5" id="menu-toggle" aria-label="Abrir Menu" aria-expanded="false">
+        <span class="w-8 h-0.5 bg-gold transition-all block"></span>
+        <span class="w-8 h-0.5 bg-gold transition-all block"></span>
+        <span class="w-5 h-0.5 bg-gold self-end transition-all block"></span>
+      </button>
+    </div>
+  </header>
+
+  <button id="whatsapp-button" 
+          class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:bg-[#128C7E] transition-all duration-300 animate-pulse-whatsapp"
+          aria-label="Fale conosco no WhatsApp"
+          onclick="openWhatsAppModal()">
+    <i class="fab fa-whatsapp text-xl"></i>
+  </button>
+
+  <div id="whatsapp-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/50 p-4" aria-hidden="true">
+    <div class="bg-sand text-primary rounded-2xl max-w-md w-full p-8 animate-slideUp" role="dialog" aria-modal="true" aria-labelledby="whatsapp-modal-title">
+      <div class="flex justify-between items-center mb-6">
+        <h3 id="whatsapp-modal-title" class="font-serif text-2xl">Vamos conversar?</h3>
+        <button onclick="closeWhatsAppModal()" class="text-2xl hover:text-gold" aria-label="Fechar modal">✕</button>
+      </div>
+      <p class="mb-6">Conte seu sonho e deixe o planejamento com quem entende de viagens e pessoas.</p>
+      <a href="https://wa.me/5511993573248?text=Olá! Gostaria de planejar uma viagem especial."
+         target="_blank"
+         rel="noopener noreferrer"
+         class="block w-full bg-[#25D366] text-white text-center py-4 rounded-full font-bold hover:bg-[#128C7E] transition-colors">
+        <i class="fab fa-whatsapp mr-2"></i> Iniciar Atendimento
+      </a>
+      <p class="text-sm text-gray-600 mt-4">
+        <i class="fas fa-clock mr-2"></i> Atendimento Humanizado<br>
+        <i class="fas fa-phone mr-2"></i> (11) 4581-3268 | (11) 99357-3248
+      </p>
+    </div>
+  </div>
+
+  <div id="lgpd-banner" class="fixed bottom-0 left-0 right-0 z-40 bg-primary-dark border-t border-gold/20 p-4 hidden">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+      <div class="text-sm">
+        <p>Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="privacidade.html" class="text-gold underline">Política de Privacidade</a>.</p>
+      </div>
+      <div class="flex gap-3">
+        <button onclick="acceptCookies()" class="bg-gold text-primary px-6 py-2 rounded-full text-sm font-bold hover:bg-white transition-colors">
+          Aceitar
+        </button>
+        <button onclick="openLgpdModal()" class="border border-gold text-gold px-6 py-2 rounded-full text-sm hover:bg-gold/10 transition-colors">
+          Configurar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="lgpd-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/50 p-4" aria-hidden="true">
+    <div class="bg-sand text-primary rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-8 animate-slideUp" role="dialog" aria-modal="true" aria-labelledby="lgpd-modal-title">
+      <div class="flex justify-between items-center mb-6">
+        <h3 id="lgpd-modal-title" class="font-serif text-2xl">Políticas de Privacidade</h3>
+        <button onclick="closeLgpdModal()" class="text-2xl hover:text-gold" aria-label="Fechar modal">✕</button>
+      </div>
+      
+      <div class="space-y-6">
+        <div class="grid md:grid-cols-3 gap-4">
+          <a href="privacidade.html" class="block p-4 border rounded-lg hover:border-gold hover:bg-gold/5 transition-colors">
+            <h5 class="font-bold mb-2">Política de Privacidade</h5>
+            <p class="text-sm text-gray-600">Como coletamos e usamos seus dados</p>
+          </a>
+          
+          <a href="termos.html" class="block p-4 border rounded-lg hover:border-gold hover:bg-gold/5 transition-colors">
+            <h5 class="font-bold mb-2">Termos de Uso</h5>
+            <p class="text-sm text-gray-600">Condições de uso dos nossos serviços</p>
+          </a>
+          
+          <a href="lgpd.html" class="block p-4 border rounded-lg hover:border-gold hover:bg-gold/5 transition-colors">
+            <h5 class="font-bold mb-2">LGPD</h5>
+            <p class="text-sm text-gray-600">Nossa conformidade com a legislação</p>
+          </a>
+        </div>
+        
+        <div class="bg-primary/5 p-4 rounded-lg">
+          <p class="text-sm text-gray-700">
+            <strong>NANDA TURISMO EVENTOS E PROMOCAO DE VENDAS LTDA - ME</strong><br>
+            CNPJ 12.344.318/0001-79<br>
+            Jundiaí/SP<br>
+            <i class="fas fa-phone mr-2"></i> (11) 4581-3268 | (11) 99357-3248<br>
+            <i class="fas fa-envelope mr-2"></i> nanda@nandaturismo.com.br
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="fixed inset-0 bg-primary z-[60] flex flex-col justify-center items-center gap-8 text-2xl font-serif translate-x-full" aria-hidden="true">
+    <button id="menu-close" class="absolute top-10 right-10 text-gold text-sm uppercase tracking-widest" aria-label="Fechar menu">Fechar ✕</button>
+    <a href="#sobre" class="hover:text-gold transition-colors" onclick="closeMobileMenu()">A Agência</a>
+    <a href="#destinos" class="hover:text-gold transition-colors" onclick="closeMobileMenu()">Destinos</a>
+    <a href="#roteiros" class="hover:text-gold transition-colors" onclick="closeMobileMenu()">Roteiros</a>
+    <a href="#diferenciais" class="hover:text-gold transition-colors" onclick="closeMobileMenu()">Vantagens</a>
+    <a href="#contato" class="bg-gold text-primary px-8 py-3 rounded-full text-lg font-sans font-bold hover:bg-white transition-colors" onclick="closeMobileMenu()">Falar com a Nanda</a>
+  </div>
+
+  <main id="main">
+    
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/40 to-primary z-10"></div>
+        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" 
+             alt="Paisagem brasileira - Viajar é viver histórias" 
+             class="w-full h-full object-cover"
+             loading="eager">
+      </div>
+
+      <div class="container mx-auto px-6 relative z-20 text-center">
+        <div class="reveal-container mb-4">
+          <span class="inline-block animate-reveal text-gold uppercase tracking-[0.4em] text-xs md:text-sm font-semibold">Experiências Personalizadas</span>
+        </div>
+        
+        <div class="reveal-container mb-8">
+          <h1 class="font-serif text-4xl md:text-7xl lg:text-8xl animate-reveal [animation-delay:0.2s] leading-tight">
+            Transforme sonhos em <br> <span class="italic text-gold">experiências reais</span>
+          </h1>
+        </div>
+
+        <div class="max-w-2xl mx-auto opacity-0 animate-[fadeIn_1s_ease-out_1s_forwards]">
+          <p class="text-gray-300 text-lg md:text-xl font-light leading-relaxed mb-10">
+            Viajar é mais do que sair de um lugar e chegar a outro. É descobrir novas versões de si mesmo.
+            Planejamento personalizado com suporte completo para você só se preocupar em aproveitar.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#contato" class="bg-gold text-primary font-bold px-8 py-4 rounded-full hover:scale-105 transition-transform shadow-lg shadow-gold/20">
+              <i class="fas fa-plane-departure mr-2"></i> Viver Algo Novo
+            </a>
+            <a href="#destinos" class="glass px-8 py-4 rounded-full hover:bg-white/10 transition-all">
+              <i class="fas fa-map-marked-alt mr-2"></i> Ver Roteiros
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+        <div class="w-[1px] h-16 bg-gradient-to-b from-transparent to-gold"></div>
+      </div>
+    </section>
+
+    <section id="destinos" class="py-16 md:py-24 bg-sand text-primary">
+      <div class="container mx-auto px-6 text-center">
+        <div class="mb-12 md:mb-16">
+          <h2 class="font-serif text-3xl md:text-5xl mb-4 md:mb-6">Destinos e <span class="text-gold">Experiências</span></h2>
+          <p class="text-gray-600 max-w-2xl mx-auto px-4">Lugares que despertam emoção, descanso e conexão, escolhidos para o seu perfil.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+          <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+            <div class="relative h-48 md:h-64 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1544984243-ec57ea16fe25?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                   alt="Praias do Brasil e Santa Catarina" 
+                   class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                   loading="lazy">
+              <div class="absolute top-4 left-4 bg-gold text-primary px-4 py-2 rounded-full text-sm font-bold">
+                <i class="fas fa-umbrella-beach mr-2"></i> Brasil
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-xl md:text-2xl mb-2">Santa Catarina & Nordeste</h3>
+              <p class="text-gray-600 mb-4 text-sm md:text-base">Forte presença em roteiros nacionais. Praias, natureza e tranquilidade ideais para viagens em família.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-gold font-bold text-sm md:text-base">Pacotes Personalizados</span>
+                <a href="#contato" class="text-primary hover:text-gold font-semibold text-sm">
+                  Saiba mais <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+            <div class="relative h-48 md:h-64 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                   alt="Europa" 
+                   class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                   loading="lazy">
+              <div class="absolute top-4 left-4 bg-primary text-white px-4 py-2 rounded-full text-sm font-bold">
+                <i class="fas fa-landmark mr-2"></i> Europa
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-xl md:text-2xl mb-2">Circuitos Europeus</h3>
+              <p class="text-gray-600 mb-4 text-sm md:text-base">Orientação completa para sua primeira viagem internacional. Pacotes com aéreo, hotel e passeios.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-gold font-bold text-sm md:text-base">Roteiros Clássicos</span>
+                <a href="#contato" class="text-primary hover:text-gold font-semibold text-sm">
+                  Saiba mais <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+            <div class="relative h-48 md:h-64 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                   alt="Orlando e EUA" 
+                   class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                   loading="lazy">
+              <div class="absolute top-4 left-4 bg-[#3B82F6] text-white px-4 py-2 rounded-full text-sm font-bold">
+                <i class="fas fa-flag-usa mr-2"></i> EUA
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-xl md:text-2xl mb-2">Orlando em Família</h3>
+              <p class="text-gray-600 mb-4 text-sm md:text-base">Viva a magia dos parques com praticidade e conforto. Criamos memórias que duram a vida toda.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-gold font-bold text-sm md:text-base">Magia & Diversão</span>
+                <a href="#contato" class="text-primary hover:text-gold font-semibold text-sm">
+                  Saiba mais <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-10 md:mt-12">
+          <a href="#contato" class="inline-flex items-center gap-3 glass px-6 py-3 md:px-8 md:py-4 rounded-full hover:bg-white/10 transition-all">
+            <i class="fas fa-compass text-gold"></i>
+            <span class="text-sm md:text-base">Solicitar roteiro sob medida</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="py-16 md:py-24 bg-primary text-white">
+      <div class="container mx-auto px-6 grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+        <div class="relative group order-2 md:order-1">
+          <div class="absolute -top-6 -left-6 w-48 h-48 md:w-64 md:h-64 bg-gold/10 rounded-full blur-3xl group-hover:bg-gold/20 transition-all"></div>
+          <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Atendimento Nanda Turismo" 
+               class="rounded-2xl shadow-2xl relative z-10 animate-float w-full"
+               loading="lazy">
+          <div class="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 glass !bg-sand text-primary p-6 rounded-xl z-20">
+            <p class="font-serif text-3xl md:text-4xl text-gold">14+</p>
+            <p class="text-xs uppercase tracking-widest">Anos realizando sonhos</p>
+          </div>
+        </div>
+
+        <div class="space-y-4 md:space-y-6 order-1 md:order-2 text-center md:text-left">
+          <h2 class="font-serif text-3xl md:text-5xl leading-tight">Sobre a <span class="text-gold">Nanda Turismo</span></h2>
+          <p class="text-gray-300 text-base md:text-lg leading-relaxed">
+            A Nanda Turismo nasce com um propósito: <strong>transformar sonhos em experiências reais</strong>, cuidadas em cada detalhe.
+          </p>
+          <p class="text-gray-300 text-base md:text-lg leading-relaxed">
+            Aqui, cada viagem é planejada de forma personalizada, com atenção e carinho. Oferecemos suporte completo — desde a escolha do destino até o seu retorno — para que você só precise se preocupar com uma coisa: aproveitar.
+          </p>
+          
+          <div class="grid grid-cols-2 gap-4 md:gap-6 pt-4">
+            <div class="flex items-start gap-3">
+              <div class="bg-gold/20 p-3 rounded-full">
+                <i class="fas fa-map-marker-alt text-gold"></i>
+              </div>
+              <div>
+                <h4 class="font-bold mb-1 text-sm md:text-base">Sede em Jundiaí</h4>
+                <p class="text-gray-400 text-xs md:text-sm">Atendendo todo o Brasil</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-3">
+              <div class="bg-gold/20 p-3 rounded-full">
+                <i class="fas fa-heart text-gold"></i>
+              </div>
+              <div>
+                <h4 class="font-bold mb-1 text-sm md:text-base">Atendimento Humano</h4>
+                <p class="text-gray-400 text-xs md:text-sm">Nada de robôs</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="pt-6">
+            <a href="#contato" class="inline-flex items-center gap-2 bg-gold text-primary font-bold px-6 py-3 md:px-8 md:py-4 rounded-full hover:bg-white transition-colors">
+              <i class="fas fa-comment-dots"></i> Falar com um consultor
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="roteiros" class="py-16 md:py-24 bg-sand text-primary">
+      <div class="container mx-auto px-6 text-center">
+        <div class="mb-12 md:mb-16">
+          <h2 class="font-serif text-3xl md:text-5xl mb-4 md:mb-6">O Que <span class="text-gold">Oferecemos</span></h2>
+          <p class="text-gray-600 max-w-2xl mx-auto px-4">Viagens completas pensadas de acordo com o perfil de cada cliente.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+          <div class="glass !bg-white p-6 md:p-8 rounded-3xl shadow-lg">
+            <div class="text-center mb-6">
+              <div class="inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-gold/20 rounded-full mb-4">
+                <i class="fas fa-user-friends text-gold text-xl md:text-2xl"></i>
+              </div>
+              <h3 class="font-serif text-xl md:text-2xl mb-3">Roteiros Personalizados</h3>
+              <p class="text-gray-600 text-sm md:text-base">Para famílias, casais e grupos.</p>
+            </div>
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-center gap-3 text-sm md:text-base">
+                <i class="fas fa-check text-gold"></i>
+                <span>Planejamento detalhado</span>
+              </li>
+              <li class="flex items-center gap-3 text-sm md:text-base">
+                <i class="fas fa-check text-gold"></i>
+                <span>Destinos nacionais e internacionais</span>
+              </li>
+              <li class="flex items-center gap-3 text-sm md:text-base">
+                <i class="fas fa-check text-gold"></i>
+                <span>Experiências exclusivas</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="glass !bg-white p-6 md:p-8 rounded-3xl shadow-lg border-2 border-gold relative">
+            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+              <span class="bg-gold text-primary px-4 py-1 rounded-full text-sm font-bold">Completo</span>
+            </div>
+            <div class="text-center mb-6">
+              <div class="inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-gold/30 rounded-full mb-4">
+                <i class="fas fa-suitcase text-gold text-xl md:text-2xl"></i>
+              </div>
+              <h3 class="font-serif text-xl md:text-2xl mb-3">Pacotes Completos</h3>
+              <p class="text-gray-600 text-sm md:text-base">Praticidade e conforto garantidos.</p>
+            </div>
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-center gap-3 text-sm md:text-base">
+                <i class="fas fa-check text-gold"></i>
+                <span>Passagem aérea + Hospedagem</span>
+              </li>
+              <li class="flex items-center gap-3 text-sm md:text-base">
+                <i class="fas fa-check text-gold"></i>
+                <span>Reserva de hotéis selecionados</span>
+              </li>
+              <li class="flex items-center gap-3 text-sm md:text-base">
+                <i class="fas fa-check text-gold"></i>
+                <span>Seguro viagem incluso</span>
+              </li>
+              <li class="flex items-center gap-3 text-sm md:text-base">
+                <i class="fas fa-check text-gold"></i>
+                <span>Melhor custo-benefício</span>
+              </li>
+            </ul>
+            <div class="text-center">
+              <a href="#contato" class="bg-gold text-primary font-bold px-5 py-2 md:px-6 md:py-3 rounded-full hover:bg-white transition-colors inline-block">
+                <i class="fas fa-star mr-2"></i> Orçar agora
+              </a>
+            </div>
+          </div>
+
+          <div class="glass !bg-white p-6 md:p-8 rounded-3xl shadow-lg">
+            <div class="text-center mb-6">
+              <div class="inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-gold/20 rounded-full mb-4">
+                <i class="fas fa-hands-helping text-gold text-xl md:text-2xl"></i>
+              </div>
+              <h3 class="font-serif text-xl md:text-2xl mb-3">Suporte Total</h3>
+              <p class="text-gray-600 text-sm md:text-base">Você nunca viaja sozinho.</p>
+            </div>
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-center gap-3 text-sm md:text-base">
+                <i class="fas fa-check text-gold"></i>
+                <span>Atendimento antes, durante e após</span>
+              </li>
+              <li class="flex items-center gap-3 text-sm md:text-base">
+                <i class="fas fa-check text-gold"></i>
+                <span>Orientação para 1ª viagem</span>
+              </li>
+              <li class="flex items-center gap-3 text-sm md:text-base">
+                <i class="fas fa-check text-gold"></i>
+                <span>Resolução de imprevistos</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="diferenciais" class="py-16 md:py-24 bg-primary overflow-hidden">
+      <div class="container mx-auto px-6 text-center md:text-left">
+        <div class="mb-12 md:mb-16">
+          <h2 class="font-serif text-3xl md:text-5xl mb-4 md:mb-6">Por que viajar com a <br> <span class="italic text-gold">Nanda Turismo?</span></h2>
+          <p class="max-w-md mx-auto md:mx-0 text-gray-400 border-l border-gold pl-6">
+            Aqui, o cliente não é apenas um número. Cada viagem é tratada como única.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-6">
+          <div class="glass p-6 md:p-8 rounded-3xl hover:border-gold/50 transition-all group text-center">
+            <div class="inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-gold/20 rounded-full mb-6 group-hover:scale-110 transition-transform mx-auto">
+              <i class="fas fa-heart text-gold text-xl md:text-2xl"></i>
+            </div>
+            <h3 class="font-serif text-lg md:text-xl mb-4">Atendimento Próximo</h3>
+            <p class="text-gray-400 leading-relaxed text-sm md:text-base">Consultoria personalizada que entende seus sonhos e desejos.</p>
+          </div>
+
+          <div class="glass p-6 md:p-8 rounded-3xl hover:border-gold/50 transition-all group text-center">
+            <div class="inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-gold/20 rounded-full mb-6 group-hover:scale-110 transition-transform mx-auto">
+              <i class="fas fa-clipboard-check text-gold text-xl md:text-2xl"></i>
+            </div>
+            <h3 class="font-serif text-lg md:text-xl mb-4">Planejamento Cuidadoso</h3>
+            <p class="text-gray-400 leading-relaxed text-sm md:text-base">Atenção a cada detalhe do roteiro para evitar imprevistos.</p>
+          </div>
+
+          <div class="glass p-6 md:p-8 rounded-3xl hover:border-gold/50 transition-all group text-center">
+            <div class="inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-gold/20 rounded-full mb-6 group-hover:scale-110 transition-transform mx-auto">
+              <i class="fas fa-shield-alt text-gold text-xl md:text-2xl"></i>
+            </div>
+            <h3 class="font-serif text-lg md:text-xl mb-4">Segurança e Conforto</h3>
+            <p class="text-gray-400 leading-relaxed text-sm md:text-base">Parceiros confiáveis e suporte para garantir sua tranquilidade.</p>
+          </div>
+
+          <div class="glass p-6 md:p-8 rounded-3xl hover:border-gold/50 transition-all group text-center">
+            <div class="inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-gold/20 rounded-full mb-6 group-hover:scale-110 transition-transform mx-auto">
+              <i class="fas fa-camera-retro text-gold text-xl md:text-2xl"></i>
+            </div>
+            <h3 class="font-serif text-lg md:text-xl mb-4">Memórias para a Vida</h3>
+            <p class="text-gray-400 leading-relaxed text-sm md:text-base">Focamos em experiências que marcam e emocionam.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-sand text-primary">
+      <div class="container mx-auto px-6 text-center">
+        <div class="mb-12 md:mb-16">
+          <h2 class="font-serif text-3xl md:text-5xl mb-4 md:mb-6">Histórias <span class="text-gold">Reais</span></h2>
+          <p class="text-gray-600 max-w-2xl mx-auto px-4">Veja quem já confiou na Nanda Turismo para realizar seus sonhos.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+          <div class="bg-white p-6 md:p-8 rounded-3xl shadow-lg">
+            <div class="flex items-center mb-6">
+              <div class="w-10 h-10 md:w-12 md:h-12 bg-gold/20 rounded-full flex items-center justify-center mr-4">
+                <i class="fas fa-user text-gold"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm md:text-base">Carlos Silva</h4>
+                <p class="text-gray-500 text-xs md:text-sm">Viagem para Orlando</p>
+              </div>
+            </div>
+            <p class="text-gray-600 italic mb-4 text-sm md:text-base">"A Nanda organizou nossa viagem para Orlando com 2 crianças. Tudo perfeito! O suporte durante a viagem nos deixou muito tranquilos."</p>
+            <div class="text-gold">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 md:p-8 rounded-3xl shadow-lg">
+            <div class="flex items-center mb-6">
+              <div class="w-10 h-10 md:w-12 md:h-12 bg-gold/20 rounded-full flex items-center justify-center mr-4">
+                <i class="fas fa-user text-gold"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm md:text-base">Mariana Santos</h4>
+                <p class="text-gray-500 text-xs md:text-sm">Lua de mel</p>
+              </div>
+            </div>
+            <p class="text-gray-600 italic mb-4 text-sm md:text-base">"Nossa lua de mel foi inesquecível! A Nanda nos indicou pousadas charmosas e passeios exclusivos. Superou as expectativas!"</p>
+            <div class="text-gold">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 md:p-8 rounded-3xl shadow-lg">
+            <div class="flex items-center mb-6">
+              <div class="w-10 h-10 md:w-12 md:h-12 bg-gold/20 rounded-full flex items-center justify-center mr-4">
+                <i class="fas fa-user text-gold"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm md:text-base">Roberto Almeida</h4>
+                <p class="text-gray-500 text-xs md:text-sm">Europa</p>
+              </div>
+            </div>
+            <p class="text-gray-600 italic mb-4 text-sm md:text-base">"Organizamos um roteiro de 15 dias. Tudo foi perfeito: hotéis bem localizados e dicas incríveis. O atendimento próximo fez a diferença."</p>
+            <div class="text-gold">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="py-16 md:py-24 relative overflow-hidden bg-primary-dark">
+      <div class="container mx-auto px-6 text-center relative z-10">
+        <div class="reveal-container mb-8">
+          <h2 class="font-serif text-3xl md:text-7xl animate-reveal italic">
+            Está na hora de <br> <span class="text-gold">viver algo novo?</span>
+          </h2>
+        </div>
+        
+        <div class="max-w-5xl mx-auto mt-12 md:mt-16">
+          <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            
+            <div class="text-center md:text-left space-y-6 md:space-y-8">
+              <p class="text-gray-300 text-base md:text-lg leading-relaxed">
+                Se você sente que é hora de viajar, descansar ou explorar, estamos prontos para ajudar. Fale com a gente, conte seu sonho e deixe o planejamento com quem entende de viagens e pessoas.
+              </p>
+              
+              <div class="space-y-6">
+                <div class="flex items-center gap-4 md:gap-6 group">
+                  <div class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-gold/30 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-primary transition-all">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div>
+                    <span class="block text-xs uppercase tracking-widest text-gold font-bold">Telefone Fixo</span>
+                    <a href="tel:551145813268" class="text-lg md:text-xl hover:text-gold transition-colors">(11) 4581-3268</a>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-4 md:gap-6 group">
+                  <div class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-gold/30 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-primary transition-all">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div>
+                    <span class="block text-xs uppercase tracking-widest text-gold font-bold">E-mail Corporativo</span>
+                    <a href="mailto:nanda@nandaturismo.com.br" class="text-lg md:text-xl hover:text-gold transition-colors">nanda@nandaturismo.com.br</a>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-4 md:gap-6 group">
+                  <div class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-gold/30 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-primary transition-all">
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                  <div>
+                    <span class="block text-xs uppercase tracking-widest text-gold font-bold">Curadoria Visual</span>
+                    <a href="https://www.instagram.com/nandaturismoviagens/" target="_blank" rel="noopener noreferrer" class="text-lg md:text-xl hover:text-gold transition-colors">@nandaturismoviagens</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass p-6 md:p-10 lg:p-16 rounded-[40px] md:rounded-[60px] border-gold/20 relative group">
+              <div class="absolute -top-4 -right-4 md:-top-6 md:-right-6 bg-gold text-primary font-bold px-4 py-1 md:px-6 md:py-2 rounded-full text-xs uppercase tracking-tighter animate-bounce">
+                Consultoria Gratuita
+              </div>
+              
+              <i class="fab fa-whatsapp text-5xl md:text-6xl text-gold mb-6 md:mb-8"></i>
+              <h3 class="font-serif text-2xl md:text-3xl mb-4 md:mb-6">Iniciar Conversa</h3>
+              <p class="text-gray-400 mb-8 md:mb-10 text-sm md:text-base">Receba um atendimento exclusivo e humano para planejar sua próxima história.</p>
+              
+              <a href="https://wa.me/5511993573248?text=Olá,%20vi%20o%20site%20e%20gostaria%20de%20conversar%20sobre%20minha%20viagem." 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="block w-full bg-gold text-primary font-bold py-4 md:py-6 rounded-full hover:bg-white hover:scale-105 transition-all uppercase tracking-[0.1em] md:tracking-[0.2em] shadow-xl md:shadow-2xl shadow-gold/20 text-sm md:text-base">
+                  Falar com a Nanda
+              </a>
+              
+              <div class="mt-6 md:mt-8 flex justify-center items-center gap-2 text-xs text-gray-500 uppercase tracking-widest">
+                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                Online agora
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute top-1/2 left-0 -translate-y-1/2 w-full h-px bg-gradient-to-r from-transparent via-gold/10 to-transparent"></div>
+    </section>
+
+  </main>
+
+  <footer class="py-8 md:py-12 border-t border-white/10">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        
+        <div>
+          <a href="index.html" class="block mb-6 transition-transform hover:scale-105">
+            <img src="logo-bg.png" alt="Nanda Turismo" class="h-10 md:h-12 w-auto">
+          </a>
+          <p class="text-gray-500 text-sm mb-2">Desde 2010 <br>Transformando sonhos em experiências reais.</p>
+          <p class="text-gray-500 text-xs uppercase tracking-tighter opacity-70">
+            NANDA TURISMO EVENTOS E PROMOCAO DE VENDAS LTDA<br>
+            CNPJ 12.344.318/0001-79
+          </p>
+        </div>
+        
+        <div class="space-y-4">
+          <h4 class="font-bold text-gold text-sm md:text-base">Links Rápidos</h4>
+          <div class="flex flex-col gap-2">
+            <a href="#destinos" class="text-gray-400 hover:text-gold text-xs md:text-sm transition-colors">Destinos</a>
+            <a href="#roteiros" class="text-gray-400 hover:text-gold text-xs md:text-sm transition-colors">Roteiros</a>
+            <a href="#sobre" class="text-gray-400 hover:text-gold text-xs md:text-sm transition-colors">Sobre Nós</a>
+            <a href="#contato" class="text-gray-400 hover:text-gold text-xs md:text-sm transition-colors">Contato</a>
+          </div>
+        </div>
+        
+        <div class="space-y-4">
+          <h4 class="font-bold text-gold text-sm md:text-base">Legal</h4>
+          <div class="flex flex-col gap-2">
+            <a href="privacidade.html" class="text-gray-400 hover:text-gold text-xs md:text-sm transition-colors">Política de Privacidade</a>
+            <a href="termos.html" class="text-gray-400 hover:text-gold text-xs md:text-sm transition-colors">Termos de Uso</a>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="font-bold text-gold text-sm md:text-base">Redes Sociais</h4>
+          <div class="flex gap-4 pt-4">
+            <a href="https://www.instagram.com/nandaturismoviagens/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gold transition-colors">
+              <i class="fab fa-instagram text-lg md:text-xl"></i>
+            </a>
+            <a href="https://web.facebook.com/nanda.turismo/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gold transition-colors">
+              <i class="fab fa-facebook text-lg md:text-xl"></i>
+            </a>
+            <a href="https://wa.me/5511993573248" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gold transition-colors">
+              <i class="fab fa-whatsapp text-lg md:text-xl"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="border-t border-white/10 pt-8 text-center">
+        <p class="text-gray-500 text-xs md:text-sm">
+          @2026 - NANDA TURISMO EVENTOS E PROMOCAO DE VENDAS LTDA - ME - CNPJ 12.344.318/0001-79 | Todos os direitos reservados | Desenvolvido por <a href="https://redesigner.com.br" target="_blank" rel="noopener noreferrer" class="text-gold hover:underline">REDESIGNER PPM</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Nanda Turismo",
+    "description": "Agência de viagens especializada em roteiros personalizados no Brasil, Europa e EUA.",
+    "url": "https://nandaturismo.com.br",
+    "telephone": "+551145813268",
+    "email": "nanda@nandaturismo.com.br",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Jundiaí",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "openingHours": "Mo-Fr 09:00-18:00",
+    "priceRange": "$$",
+    "founder": {
+      "@type": "Person",
+      "name": "Nanda Turismo Eventos e Promoção de Vendas LTDA"
+    },
+    "taxID": "12.344.318/0001-79"
+  }
+  </script>
+
+  <script>
+    // Header scroll effect
+    const header = document.getElementById('header');
+    const headerLogo = document.getElementById('header-logo');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('bg-primary-dark', 'py-4', 'shadow-xl');
+        header.classList.remove('py-6', 'bg-transparent');
+        headerLogo.classList.remove('h-14');
+        headerLogo.classList.add('h-12');
+      } else {
+        header.classList.remove('bg-primary-dark', 'py-4', 'shadow-xl');
+        header.classList.add('py-6', 'bg-transparent');
+        headerLogo.classList.remove('h-12');
+        headerLogo.classList.add('h-14');
+      }
+    });
+
+    // Mobile menu - CORRIGIDO
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuClose = document.getElementById('menu-close');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.remove('translate-x-full');
+      mobileMenu.setAttribute('aria-hidden', 'false');
+      menuToggle.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    });
+
+    menuClose.addEventListener('click', closeMobileMenu);
+
+    function closeMobileMenu() {
+      mobileMenu.classList.add('translate-x-full');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    // Fechar menu ao clicar nos links
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', closeMobileMenu);
+    });
+
+    // Modal WhatsApp
+    function openWhatsAppModal() {
+      document.getElementById('whatsapp-modal').classList.remove('hidden');
+      document.getElementById('whatsapp-modal').classList.add('flex');
+      document.getElementById('whatsapp-modal').setAttribute('aria-hidden', 'false');
+      trapFocus('whatsapp-modal');
+    }
+
+    function closeWhatsAppModal() {
+      document.getElementById('whatsapp-modal').classList.add('hidden');
+      document.getElementById('whatsapp-modal').classList.remove('flex');
+      document.getElementById('whatsapp-modal').setAttribute('aria-hidden', 'true');
+      releaseFocus();
+    }
+
+    // Modal LGPD - CORRIGIDO
+    function openLgpdModal() {
+      document.getElementById('lgpd-modal').classList.remove('hidden');
+      document.getElementById('lgpd-modal').classList.add('flex');
+      document.getElementById('lgpd-modal').setAttribute('aria-hidden', 'false');
+      trapFocus('lgpd-modal');
+    }
+
+    function closeLgpdModal() {
+      document.getElementById('lgpd-modal').classList.add('hidden');
+      document.getElementById('lgpd-modal').classList.remove('flex');
+      document.getElementById('lgpd-modal').setAttribute('aria-hidden', 'true');
+      releaseFocus();
+    }
+
+    // Focus trap para modais
+    let activeModal = null;
+    let focusableElements = [];
+    let firstFocusableElement = null;
+    let lastFocusableElement = null;
+
+    function trapFocus(modalId) {
+      const modal = document.getElementById(modalId);
+      activeModal = modal;
+      
+      focusableElements = modal.querySelectorAll(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      );
+      firstFocusableElement = focusableElements[0];
+      lastFocusableElement = focusableElements[focusableElements.length - 1];
+      
+      firstFocusableElement.focus();
+      
+      modal.addEventListener('keydown', handleTabKey);
+      document.body.style.overflow = 'hidden';
+    }
+
+    function releaseFocus() {
+      if (activeModal) {
+        activeModal.removeEventListener('keydown', handleTabKey);
+      }
+      document.body.style.overflow = '';
+      activeModal = null;
+    }
+
+    function handleTabKey(e) {
+      if (e.key !== 'Tab') return;
+      
+      if (e.shiftKey) {
+        if (document.activeElement === firstFocusableElement) {
+          e.preventDefault();
+          lastFocusableElement.focus();
+        }
+      } else {
+        if (document.activeElement === lastFocusableElement) {
+          e.preventDefault();
+          firstFocusableElement.focus();
+        }
+      }
+    }
+
+    // Fechar modais com Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if (document.getElementById('whatsapp-modal').classList.contains('flex')) {
+          closeWhatsAppModal();
+        }
+        if (document.getElementById('lgpd-modal').classList.contains('flex')) {
+          closeLgpdModal();
+        }
+        if (!mobileMenu.classList.contains('translate-x-full')) {
+          closeMobileMenu();
+        }
+      }
+    });
+
+    // Fechar modais ao clicar fora
+    window.addEventListener('click', (e) => {
+      const whatsappModal = document.getElementById('whatsapp-modal');
+      const lgpdModal = document.getElementById('lgpd-modal');
+      
+      if (e.target === whatsappModal) {
+        closeWhatsAppModal();
+      }
+      if (e.target === lgpdModal) {
+        closeLgpdModal();
+      }
+    });
+
+    // LGPD Cookies - CORRIGIDO
+    function acceptCookies() {
+      document.getElementById('lgpd-banner').style.display = 'none';
+      localStorage.setItem('cookies-accepted', 'true');
+    }
+
+    // Verificar se já aceitou cookies
+    if (localStorage.getItem('cookies-accepted') !== 'true') {
+      setTimeout(() => {
+        document.getElementById('lgpd-banner').classList.remove('hidden');
+      }, 1000);
+    }
+
+    // Smooth scroll para links internos
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Intersection Observer
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('opacity-100', 'translate-y-0');
+            entry.target.classList.remove('opacity-0', 'translate-y-10');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      const sections = document.querySelectorAll('section:not(:first-child)');
+      sections.forEach(section => {
+        section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+        observer.observe(section);
+      });
+    }
+
+    // Expor funções para onclick
+    window.openWhatsAppModal = openWhatsAppModal;
+    window.closeWhatsAppModal = closeWhatsAppModal;
+    window.openLgpdModal = openLgpdModal;
+    window.closeLgpdModal = closeLgpdModal;
+    window.acceptCookies = acceptCookies;
+    window.closeMobileMenu = closeMobileMenu;
+  </script>
+
+</body>
+</html>

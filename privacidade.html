@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Política de Privacidade | Nanda Turismo</title>
+  <meta name="description" content="Política de Privacidade da Nanda Turismo - Como protegemos seus dados pessoais.">
+  
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/png" href="logo.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary': '#0B2A3D',
+            'primary-dark': '#081F2E',
+            'gold': '#D4AF6A',
+            'sand': '#F9F7F2',
+          },
+          fontFamily: {
+            'serif': ['Playfair Display', 'serif'],
+            'sans': ['Inter', 'sans-serif'],
+          },
+          animation: {
+            'slideUp': 'slideUp 0.3s ease-out',
+          },
+          keyframes: {
+            slideUp: {
+              '0%': { transform: 'translateY(100%)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .glass {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #0B2A3D; }
+    ::-webkit-scrollbar-thumb { background: #D4AF6A; border-radius: 10px; }
+
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #D4AF6A;
+      color: white;
+      padding: 8px;
+      z-index: 100;
+      transition: top 0.3s;
+    }
+    .skip-link:focus { top: 0; }
+    
+    @keyframes pulse-whatsapp {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      50% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+    }
+    .animate-pulse-whatsapp {
+      animation: pulse-whatsapp 2s infinite;
+    }
+  </style>
+</head>
+
+<body class="bg-primary text-white font-sans overflow-x-hidden">
+
+  <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
+
+  <header class="fixed w-full z-50 transition-all duration-500 py-6" id="header">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <a href="index.html">
+          <img src="logo-bg.png" alt="Nanda Turismo" class="h-10 w-auto" loading="eager">
+        </a>
+      </div>
+
+      <nav class="hidden md:flex gap-10 text-xs font-semibold uppercase tracking-[0.2em]" aria-label="Menu Principal">
+        <a href="index.html#sobre" class="hover:text-gold transition-colors">A Agência</a>
+        <a href="index.html#experiencias" class="hover:text-gold transition-colors">Experiências</a>
+        <a href="index.html#diferenciais" class="hover:text-gold transition-colors">Curadoria</a>
+        <a href="index.html#contato" class="hover:text-gold transition-colors">Contato</a>
+      </nav>
+
+      <button class="md:hidden flex flex-col gap-1.5 focus:outline-none" id="menu-toggle" aria-label="Abrir Menu">
+        <span class="w-8 h-0.5 bg-gold transition-all"></span>
+        <span class="w-8 h-0.5 bg-gold transition-all"></span>
+        <span class="w-5 h-0.5 bg-gold self-end transition-all"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Botão WhatsApp Flutuante -->
+  <button id="whatsapp-button" 
+          class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:bg-[#128C7E] transition-all duration-300 animate-pulse-whatsapp"
+          aria-label="Fale conosco no WhatsApp"
+          onclick="openWhatsAppModal()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.507 14.307l-.009.075c-.266 1.178-1.424 2.1-2.078 2.174-1.064.12-2.117.183-3.253.183-5.424 0-9.821-4.365-9.821-9.745C2.346 5.415 6.65 1 12 1c5.352 0 9.654 4.415 9.654 9.77 0 2.411-.954 4.68-2.627 6.392-.578.524-.745 1.293-.52 2.145zM12 2.003c-4.921 0-8.978 4.057-8.978 9.03 0 1.975.656 3.805 1.766 5.286l-.789 2.94 3.079-.984c1.417.791 3.077 1.25 4.922 1.25 4.921 0 8.978-4.057 8.978-9.03 0-4.972-4.057-9.03-8.978-9.03zm5.093 13.526c-.152.43-.543.797-1.002.97-.306.115-.7.22-2.025.293-1.07.057-2.118.083-3.151.083-4.999 0-7.761-2.504-7.761-7.586 0-5.084 3.767-9.216 8.405-9.216 4.637 0 8.405 4.132 8.405 9.216 0 2.206-.865 4.28-2.436 5.833-.172.17-.279.406-.28.654-.001.249.105.486.278.663z"/>
+    </svg>
+  </button>
+
+  <!-- Modal WhatsApp -->
+  <div id="whatsapp-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/50 p-4">
+    <div class="bg-sand text-primary rounded-2xl max-w-md w-full p-8 animate-slideUp">
+      <div class="flex justify-between items-center mb-6">
+        <h3 class="font-serif text-2xl">Fale Conosco</h3>
+        <button onclick="closeWhatsAppModal()" class="text-2xl hover:text-gold">✕</button>
+      </div>
+      <p class="mb-6">Entre em contato direto pelo WhatsApp para consultoria personalizada:</p>
+      <a href="https://wa.me/5511999999999?text=Olá! Gostaria de mais informações sobre viagens de luxo."
+         target="_blank"
+         class="block w-full bg-[#25D366] text-white text-center py-4 rounded-full font-bold hover:bg-[#128C7E] transition-colors">
+        Abrir Conversa no WhatsApp
+      </a>
+      <p class="text-sm text-gray-600 mt-4">Atendimento: Segunda a Sábado, 9h às 18h</p>
+    </div>
+  </div>
+
+  <!-- Menu mobile -->
+  <div id="mobile-menu" class="fixed inset-0 bg-primary z-[60] flex flex-col justify-center items-center gap-8 text-2xl font-serif translate-x-full transition-transform duration-700">
+    <button id="menu-close" class="absolute top-10 right-10 text-gold text-sm uppercase tracking-widest">Fechar ✕</button>
+    <a href="index.html#sobre" class="hover:text-gold">A Agência</a>
+    <a href="index.html#experiencias" class="hover:text-gold">Experiências</a>
+    <a href="index.html#diferenciais" class="hover:text-gold">Curadoria</a>
+    <a href="index.html#contato" class="bg-gold text-primary px-8 py-3 rounded-full text-lg">Consultoria</a>
+    <a href="index.html" class="text-sm mt-8 text-gold">← Voltar ao início</a>
+  </div>
+
+  <main id="main" class="pt-24">
+    <section class="py-16 md:py-24">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <div class="mb-12 text-center">
+          <a href="index.html" class="inline-flex items-center gap-2 text-gold hover:text-white transition-colors mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M9.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L7.414 9H15a1 1 0 110 2H7.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+            </svg>
+            Voltar para o site
+          </a>
+          
+          <h1 class="font-serif text-4xl md:text-5xl mb-4">Política de <span class="text-gold">Privacidade</span></h1>
+          <p class="text-gray-400">Última atualização: Janeiro de 2026</p>
+        </div>
+
+        <div class="glass rounded-3xl p-8 md:p-12 space-y-8">
+          <div class="prose prose-invert max-w-none">
+            <h2 class="text-2xl font-serif text-gold mb-4">1. Introdução</h2>
+            <p class="text-gray-300 mb-6">
+              A Nanda Turismo valoriza a privacidade de seus clientes e está comprometida em proteger suas informações pessoais. 
+              Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos seus dados quando você utiliza 
+              nossos serviços ou interage conosco.
+            </p>
+
+            <h2 class="text-2xl font-serif text-gold mb-4">2. Dados que Coletamos</h2>
+            <p class="text-gray-300 mb-4">Coletamos as seguintes categorias de dados:</p>
+            <ul class="list-disc pl-6 text-gray-300 space-y-2 mb-6">
+              <li><strong>Dados de identificação:</strong> Nome completo, CPF, RG, data de nascimento</li>
+              <li><strong>Dados de contato:</strong> E-mail, telefone, endereço residencial</li>
+              <li><strong>Dados de viagem:</strong> Preferências de destino, datas de viagem, informações de passaporte</li>
+              <li><strong>Dados de pagamento:</strong> Informações de cartão de crédito (processadas de forma segura por gateways de pagamento)</li>
+              <li><strong>Dados de navegação:</strong> IP, cookies, histórico de interação com nosso site</li>
+            </ul>
+
+            <h2 class="text-2xl font-serif text-gold mb-4">3. Finalidade do Tratamento</h2>
+            <p class="text-gray-300 mb-6">
+              Utilizamos seus dados para: fornecer nossos serviços de consultoria em viagens, processar pagamentos, 
+              personalizar recomendações, enviar comunicações sobre serviços, cumprir obrigações legais e melhorar 
+              a experiência do usuário em nosso site.
+            </p>
+
+            <h2 class="text-2xl font-serif text-gold mb-4">4. Compartilhamento de Dados</h2>
+            <p class="text-gray-300 mb-6">
+              Seus dados podem ser compartilhados com: parceiros de viagem (companhias aéreas, hotéis, seguradoras), 
+              processadores de pagamento, autoridades governamentais (quando exigido por lei), e prestadores de serviços 
+              de TI. Não vendemos seus dados pessoais a terceiros.
+            </p>
+
+            <h2 class="text-2xl font-serif text-gold mb-4">5. Segurança dos Dados</h2>
+            <p class="text-gray-300 mb-6">
+              Implementamos medidas técnicas e organizacionais robustas para proteger seus dados contra acesso não autorizado, 
+              alteração, divulgação ou destruição. Utilizamos criptografia, firewalls e controles de acesso rigorosos.
+            </p>
+
+            <h2 class="text-2xl font-serif text-gold mb-4">6. Seus Direitos</h2>
+            <p class="text-gray-300 mb-4">De acordo com a LGPD, você tem direito a:</p>
+            <ul class="list-disc pl-6 text-gray-300 space-y-2 mb-6">
+              <li>Confirmar a existência de tratamento de seus dados</li>
+              <li>Acessar seus dados pessoais</li>
+              <li>Corrigir dados incompletos, inexatos ou desatualizados</li>
+              <li>Solicitar a eliminação de dados tratados com seu consentimento</li>
+              <li>Revogar o consentimento a qualquer momento</li>
+              <li>Solicitar a portabilidade de dados a outro fornecedor</li>
+            </ul>
+
+            <h2 class="text-2xl font-serif text-gold mb-4">7. Retenção de Dados</h2>
+            <p class="text-gray-300 mb-6">
+              Mantemos seus dados apenas pelo tempo necessário para cumprir as finalidades descritas nesta política, 
+              ou conforme exigido por lei. Após este período, os dados serão anonimizados ou excluídos de forma segura.
+            </p>
+
+            <h2 class="text-2xl font-serif text-gold mb-4">8. Cookies e Tecnologias Similares</h2>
+            <p class="text-gray-300 mb-6">
+              Utilizamos cookies para melhorar a experiência de navegação, analisar o tráfego do site e personalizar 
+              conteúdo. Você pode gerenciar suas preferências de cookies através das configurações do seu navegador.
+            </p>
+
+            <h2 class="text-2xl font-serif text-gold mb-4">9. Contato do Encarregado de Dados (DPO)</h2>
+            <p class="text-gray-300 mb-6">
+              Para exercer seus direitos ou esclarecer dúvidas sobre esta Política de Privacidade, entre em contato 
+              com nosso Encarregado de Proteção de Dados:
+            </p>
+            <div class="bg-primary/30 p-6 rounded-xl mb-6">
+              <p class="text-gray-300"><strong>Encarregado de Proteção de Dados (DPO)</strong></p>
+              <p class="text-gray-300">E-mail: privacidade@nandaturismo.com.br</p>
+              <p class="text-gray-300">Telefone: (11) 99999-9999</p>
+              <p class="text-gray-300">Horário de atendimento: Segunda a sexta, das 9h às 18h</p>
+            </div>
+
+            <h2 class="text-2xl font-serif text-gold mb-4">10. Alterações nesta Política</h2>
+            <p class="text-gray-300 mb-6">
+              Podemos atualizar esta Política de Privacidade periodicamente. Notificaremos sobre alterações 
+              significativas através de nosso site ou por e-mail. Recomendamos a revisão regular desta política.
+            </p>
+
+            <div class="border-t border-gold/20 pt-8 mt-8">
+              <p class="text-gray-400 text-sm">
+                <strong>NANDA TURISMO EVENTOS E PROMOCAO DE VENDAS LTDA - ME</strong><br>
+                CNPJ: 12.344.318/0001-79<br>
+                Endereço: Jundiaí/SP<br>
+                Esta política foi elaborada em conformidade com a Lei nº 13.709/2018 (LGPD)
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4 pt-8">
+            <a href="termos.html" class="bg-gold text-primary font-bold px-8 py-4 rounded-full hover:bg-white transition-colors text-center">
+              Ver Termos de Uso
+            </a>
+            <a href="lgpd.html" class="glass px-8 py-4 rounded-full hover:bg-white/10 transition-all text-center">
+              Ver Informações sobre LGPD
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-12 border-t border-white/10">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="font-serif text-2xl text-gold mb-4">Nanda Turismo</div>
+          <p class="text-gray-500 text-sm mb-2">© 2026 — Criando histórias, não apenas roteiros.</p>
+          <p class="text-gray-500 text-xs">
+            NANDA TURISMO EVENTOS E PROMOCAO DE VENDAS LTDA - ME<br>
+            CNPJ 12.344.318/0001-79<br>
+            Jundiaí/SP
+          </p>
+        </div>
+        
+        <div class="space-y-4">
+          <h4 class="font-bold text-gold">Legal</h4>
+          <div class="flex flex-col gap-2">
+            <a href="privacidade.html" class="text-gold text-sm transition-colors">Política de Privacidade</a>
+            <a href="termos.html" class="text-gray-400 hover:text-gold text-sm transition-colors">Termos de Uso</a>
+            <a href="lgpd.html" class="text-gray-400 hover:text-gold text-sm transition-colors">LGPD</a>
+          </div>
+        </div>
+        
+        <div class="flex flex-col gap-4">
+          <div class="flex gap-6">
+            <a href="#" aria-label="Instagram" class="hover:text-gold transition-colors">Instagram</a>
+            <a href="#" aria-label="WhatsApp" class="hover:text-gold transition-colors">WhatsApp</a>
+            <a href="#" aria-label="LinkedIn" class="hover:text-gold transition-colors">LinkedIn</a>
+          </div>
+          <a href="index.html" class="text-left text-gray-400 hover:text-gold text-sm transition-colors">
+            ← Voltar para página inicial
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('bg-primary-dark', 'py-4', 'shadow-xl');
+        header.classList.remove('py-6');
+      } else {
+        header.classList.remove('bg-primary-dark', 'py-4', 'shadow-xl');
+        header.classList.add('py-6');
+      }
+    });
+
+    // Mobile menu
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuClose = document.getElementById('menu-close');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.remove('translate-x-full');
+    });
+
+    menuClose.addEventListener('click', () => {
+      mobileMenu.classList.add('translate-x-full');
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('translate-x-full');
+      });
+    });
+
+    // WhatsApp Modal
+    function openWhatsAppModal() {
+      document.getElementById('whatsapp-modal').classList.remove('hidden');
+      document.getElementById('whatsapp-modal').classList.add('flex');
+    }
+
+    function closeWhatsAppModal() {
+      document.getElementById('whatsapp-modal').classList.add('hidden');
+      document.getElementById('whatsapp-modal').classList.remove('flex');
+    }
+
+    // Fechar modal ao clicar fora
+    window.addEventListener('click', (e) => {
+      const whatsappModal = document.getElementById('whatsapp-modal');
+      if (e.target === whatsappModal) {
+        closeWhatsAppModal();
+      }
+    });
+  </script>
+
+</body>
+</html>
